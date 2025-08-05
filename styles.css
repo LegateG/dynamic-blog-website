@@ -18,6 +18,7 @@ header {
 
 header h1 {
     margin: 0;
+
     font-size: 2rem;
 }
 
@@ -29,11 +30,13 @@ header h1 {
     text-decoration: none;
     border-radius: 5px;
     margin-top: 1rem;
+
     transition: background-color 0.3s ease;
 }
 
 .create-post-btn:hover {
     background-color: orangered;
+
 }
 
 /* Main content area */
@@ -41,7 +44,9 @@ main {
     max-width: 800px;
     margin: 2rem auto;
     padding: 1rem;
+
     margin-bottom: 80px; /* Space for fixed footer */
+
 }
 
 /* Styling for individual blog posts */
@@ -51,17 +56,20 @@ main {
     margin-bottom: 1.5rem;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .blog-post:hover {
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+
 }
 
 .blog-post h2 {
     color: darkslateblue;
     margin-top: 0;
+
     font-size: 1.5rem;
 }
 
@@ -70,6 +78,7 @@ main {
     display: flex;
     gap: 0.5rem;
     flex-wrap: wrap;
+
 }
 
 .post-actions a,
@@ -84,6 +93,7 @@ main {
     transition: background-color 0.3s ease, transform 0.1s ease;
     flex: 1;
     min-width: 120px;
+    margin-right: 0.5rem;
 }
 
 .post-actions a {
@@ -177,6 +187,7 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
+
     box-sizing: border-box;
 }
 
@@ -356,5 +367,6 @@ footer {
     .blog-post {
         box-shadow: none;
         border: 1px solid black;
+
     }
 }
