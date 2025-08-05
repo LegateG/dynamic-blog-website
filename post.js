@@ -43,6 +43,7 @@ function displayPostDetails() {
             <p>${post.content}</p>
             <div class="post-actions">
                 <button id="edit-btn">Edit Post</button>
+                <button id="delete-btn" style="background-color: #dc3545; margin-left: 10px;">Delete Post</button>
             </div>
         </div>
     `;
@@ -51,8 +52,9 @@ function displayPostDetails() {
     document.getElementById('edit-title').value = post.title;
     document.getElementById('edit-content').value = post.content;
 
-    // Adding an event listener to the new "Edit Post" button.
+    // Adding an event listener to both Edit and Delete buttons.
     document.getElementById('edit-btn').addEventListener('click', toggleEditMode);
+    document.getElementById('delete-btn').addEventListener('click',deletePost);
 }
 
 // Function to handle showing/hiding the edit form.
