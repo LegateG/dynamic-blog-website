@@ -1,0 +1,43 @@
+Project Plan: Dynamic Blog Website
+
+Objectives:
+- Develop a multi-page blog website with CRUD functionality.
+- Use JavaScript to manage posts via local storage.
+- Use Git and GitHub for version control and collaboration.
+- Ensure the design is responsive.
+
+Milestones:
+
+1. Setup and Initialization:
+   - Create a new project directory.
+   - Initialize a Git repository.
+   - Create a GitHub repository and link it to the local repository.
+   - Create initial HTML files (e.g., index.html, create.html).
+   - Create initial CSS and JavaScript files.
+   - Make the first commit with the basic file structure.
+
+2. Read and Display Posts (READ):
+   - Implement JavaScript to retrieve posts from local storage.
+   - Create a function to display posts on the homepage (index.html).
+   - Style the homepage to display a list of posts with titles and a brief summary.
+   - Add a commit for the 'Read' functionality.
+
+3. Create New Posts (CREATE):
+   - Design the 'create.html' page with a form for new blog posts (title, content).
+   - Implement JavaScript to handle form submission.
+   - Store the new post data in local storage.
+   - Redirect the user back to the homepage after creation.
+   - Add a commit for the 'Create' functionality.
+
+4. Update and Delete Posts (UPDATE & DELETE):
+   - Add 'Edit' and 'Delete' buttons to each blog post displayed on the homepage.
+   - Implement JavaScript to handle the 'Delete' functionality, removing the post from local storage.
+   - Implement JavaScript for the 'Edit' functionality, pre-filling the form on a new page or a modal with the existing post data and saving the changes back to local storage.
+   - Add a commit for the 'Update and Delete' functionality.
+   
+5. Responsive Design and Finalization:
+   - Use CSS media queries to ensure the website is responsive on various screen sizes.
+   - Review and refine the styling of all pages.
+   - Test all CRUD functionalities to ensure they work correctly.
+   - Make a final commit for the responsive design and final touches.
+   - Push all changes to the GitHub repository.
