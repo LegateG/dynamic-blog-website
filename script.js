@@ -33,8 +33,7 @@ function displayPosts() {
             <h2>${post.title}</h2>
             <p>${post.content}</p>
             <div class="post-actions">
-                <a href="edit.html?id=${post.id}">Edit</a>
-                <button onclick="deletePost('${post.id}')">Delete</button>
+                <a href="post.html?id=${post.id}">View Post</a>
             </div>
         `;
 
@@ -42,12 +41,6 @@ function displayPosts() {
         // This will display the post on the homepage.
         postsContainer.appendChild(postElement);
     });
-}
-
-// Placeholder function will handle deleting a post.
-// We'll implement this later.
-function deletePost(id) {
-    console.log('Delete post with ID:', id);
 }
 
 // Call the function to display posts when the page loads.
