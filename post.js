@@ -95,6 +95,24 @@ function savePost(event) {
         alert('Error: Post not found.');
     }
 }
+// Function to delete the current post.
+function deletePost() {
+    // Showing a confirmation dialog to prevent accidental deletion.
+    const isConfirmed = window.confirm('Are you sure you want to delete this post? This action cannot be undone.');
+
+    if (isConfirmed) {
+        let posts = JSON.parse(localStorage.getItem('posts')) || [];
+
+        // Filtering the array to create a new array without the post to be deleted.
+        const updatedPosts = posts.filter(p => p.id !== currentPostId);
+
+        // Saving the updated array back to local storage.
+        localStorage.setItem('posts', JSON.stringify(updatedPosts));
+
+        // Redirecting the user back to the homepage.
+        window.location.href = 'index.html';
+    }
+}
 
 // Adding an event listener to the edit form.
 document.getElementById('edit-post-form').addEventListener('submit', savePost);
